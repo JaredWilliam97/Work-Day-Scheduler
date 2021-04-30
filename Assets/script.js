@@ -1,6 +1,6 @@
-// the current day is displayed at the top of the calener
+// the current day is displayed at the top of the calender
 $(document).ready(function () {
-  //wriete all of our jquery inside this function
+  //write all of our jquery inside this function
   //first, grab a reference to the element that we want the time to be displayed
 
   var currentDay = $("#currentDay");
@@ -28,12 +28,13 @@ $(document).ready(function () {
     // loop through the entire block hrs
     $(".time-block").each(function () {
       var blockHour = parseInt($(this).attr("id").split("-")[1]);
+
       if (blockHour < currentHour) {
         $(this).addClass("past");
       } else if (blockHour === currentHour) {
         $(this).addClass("present");
       } else {
-        $(this).addClass("future;");
+        $(this).addClass("future");
       }
     });
   }
@@ -42,9 +43,9 @@ $(document).ready(function () {
 
   ///Event Handlers
   $(".saveBtn").on("click", function () {
-    //need to capture the infromaton that the user inputted and we need to store the into local storage
+    //need to capture the information that the user inputted and we need to store the into local storage
 
-    // need to capture teh value of the tinput and i also ned to know waht time its attached to
+    // need to capture teh value of the the input and i also ned to know what time its attached to
     var value = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
 
