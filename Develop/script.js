@@ -27,21 +27,17 @@ $(document).ready(function () {
     //need to grab the hours for the time-block
     // loop through the entire block hrs
     $(".time-block").each(function () {
-      var blockHour = parseInt($(this).attr("id").split("-")[1];
-      if(blockHour < currentHour) {
-        $(this).addClass('past')
-    } else if(blockHour === currentHour) {
-        $(this).addClass('present');
-    }else {
-        $(this).addClass('future;')
-    }
-
-    }
-
+      var blockHour = parseInt($(this).attr("id").split("-")[1]);
+      if (blockHour < currentHour) {
+        $(this).addClass("past");
+      } else if (blockHour === currentHour) {
+        $(this).addClass("present");
+      } else {
+        $(this).addClass("future;");
+      }
     });
   }
 
- 
   checkTime();
 
   ///Event Handlers
