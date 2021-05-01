@@ -11,4 +11,17 @@ I created a simple calendar application that allows a user to save events for ea
 
 I used HTML, CSS, and jQuery to complete this calender. 
 
+As I built my website I used comments to help others reading to be able to understand it better.
 
+This was a great project. I have learned alot from jQuery and excited to learn more 
+
+Study Group:
+Joshua Lee
+Chip Long
+Lauren Gabaldon
+Alex Jurgs 
+Lacey Pape
+
+License: None
+
+Jared Sutch
